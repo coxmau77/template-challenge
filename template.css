@@ -1,0 +1,172 @@
+:root {
+    --pg: 0.8rem;
+  }
+  
+  *,
+  ::after,
+  ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 18px;
+    background-color: rgb(204, 255, 238);
+    font-family: system-ui;
+  }
+  
+  body {
+    /* background-color: greenyellow; */
+    height: 100dvh;
+  }
+  
+  input,
+  textarea,
+  button {
+    font-size: 1rem;
+    font-family: system-ui;
+  }
+  
+  select {
+    font-size: small;
+  }
+  
+  hr {
+    margin: 1.4rem auto 3rem auto;
+    border-radius: 100vw;
+    height: .4rem;
+    width: 15%;
+    background-color: rgba(132, 0, 255, 0.185);
+    border: none;
+  }
+  
+  header {
+    grid-area: header;
+    background-color: lightcoral;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--pg);
+  }
+  
+  main {
+    grid-area: main;
+    background-color: lightgreen;
+    padding: var(--pg);
+  
+    textarea {
+      width: 100%;
+      margin: 1rem 0;
+      border: none;
+      border-radius: 8px;
+      padding: 0.8rem;
+      resize: none;
+    }
+  }
+  
+  .btn-group {
+    /* background-color: pink; */
+    display: flex;
+    justify-content: end;
+    gap: 1.2rem;
+  
+    button {
+      background-color: tomato;
+  
+      &:hover {
+        background-color: orange;
+        color: tomato;
+        border-color: tomato;
+      }
+  
+      &:nth-child(1) {
+        background-color: transparent;
+        &:hover {
+          background-color: orchid;
+          color: white;
+          border-color: white;
+        }
+      }
+    }
+  }
+  
+  button {
+    background-color: transparent;
+    color: black;
+    border: 2px black solid;
+    border-radius: 100vw;
+    padding: 0.6rem 1rem;
+    font-weight: 600;
+  
+    &:hover {
+      background-color: black;
+      color: white;
+      cursor: pointer;
+    }
+  }
+  
+  .content-a {
+    grid-area: section;
+    background-color: rgb(41, 165, 41);
+    padding: var(--pg);
+    margin: 1rem 0.5rem;
+    min-height: 320px;
+    display: grid;
+    place-content: center;
+    border-radius: 8px;
+  }
+  
+  .content-b {
+    grid-area: section;
+    background-color: rgb(177, 107, 224);
+    padding: var(--pg);
+    margin: 1rem 0.5rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .mensaje-encriptado-content {
+    background-color: aqua;
+    color: black;
+    border: 2px black solid;
+    border-radius: 3vw;
+    padding: 1rem 0.6rem;
+    margin: 1rem 0;
+    font-weight: 600;
+  }
+  
+  .copy-btn-content {
+    background-color: rgb(107, 224, 204);
+    display: flex;
+    justify-content: end;
+  
+    button {
+      background-color: greenyellow;
+      color: green;
+      border-color: green;
+  
+      &:hover {
+        background-color: green;
+        color: white;
+        border-color: green;
+      }
+    }
+  }
+  
+  .hide-content {
+    display: none;
+  }
+  
+  footer {
+    background-color: black;
+    color: whitesmoke;
+    padding: var(--pg);
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+  }
+  
