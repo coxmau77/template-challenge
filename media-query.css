@@ -1,0 +1,96 @@
+@media (min-width: 600px) {
+  body {
+    background-color: purple;
+    display: grid;
+    grid-template-columns: 25% 1fr;
+    grid-template-areas: "header main" "header section" "header hr";
+
+    hr {
+      width: 20%;
+      display: block;
+    }
+  }
+
+  input,
+  textarea,
+  button,
+  body {
+    font-size: large;
+  }
+
+  header {
+    flex-direction: column;
+    justify-content: start;
+    position: sticky;
+  }
+}
+
+@media (min-width: 800px) {
+  body {
+    background-color: orange;
+  }
+  input,
+  textarea,
+  button,
+  body {
+    font-size: x-large;
+  }
+}
+
+@media (min-width: 1000px) {
+  body {
+    background-color: rebeccapurple;
+    grid-template-columns: 20% 1fr 1fr;
+    grid-template-areas: "header main section" "footer footer footer";
+    grid-template-rows: 1fr 10%;
+    hr {
+      display: none;
+    }
+
+    footer {
+      position: relative;
+
+      mark {
+        font-size: medium;
+        color: black;
+        line-height: 300%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+  input,
+  textarea,
+  button,
+  body {
+    font-size: xx-large;
+  }
+
+  mark {
+    font-size: medium;
+    color: red;
+    padding: 0.4rem 0.6rem;
+    border-radius: 0.5vw;
+  }
+}
+
+@media (min-width: 1600px) {
+    body{
+        grid-template-columns: 18% 1.2fr .8fr;
+    }
+  input,
+  textarea,
+  button,
+  body {
+    font-size: xxx-large;
+  }
+
+  mark {
+    font-size: small;
+    background-color: purple;
+    color: white;
+    padding: 0.4rem 0.6rem;
+    border-radius: 100vw;
+  }
+}
