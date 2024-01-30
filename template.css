@@ -58,6 +58,7 @@ main {
   grid-area: main;
   background-color: lightgreen;
   padding: var(--pg);
+  /* max-height: 700px; */
 
   textarea {
     width: 100%;
@@ -166,6 +167,7 @@ button {
 
 section {
   grid-area: section;
+  max-height: 700px;
 }
 
 footer {
@@ -178,21 +180,6 @@ footer {
   position: fixed;
   bottom: 0px;
   width: 100%;
-
-  ul {
-    background-color: blueviolet;
-    display: flex;
-
-    :f
-
-    li {
-      background-color: aqua;
-
-      &::after {
-        content: "xx";
-      }
-    }
-  }
 }
 
 mark {
