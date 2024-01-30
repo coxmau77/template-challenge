@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Template</title>
     <link rel="shortcut icon" href="#" type="image/x-icon">
-    <link rel="stylesheet" href="template.css">
-    <link rel="stylesheet" href="media-query.css">
+    <link rel="stylesheet" href="./template.css">
+    <link rel="stylesheet" href="./media-query.css">
 </head>
 
 <body>
@@ -16,9 +16,12 @@
             <h1>logo</h1>
             <small>Slogan company</small>
         </div>
-        <select id="version">
-            <option value="0.0.1">0.0.1</option>
-        </select>
+        <div class="options">
+            <select id="version">
+                <option value="0.0.1">0.0.1</option>
+            </select>
+            <button class="change-theme-button" id="theme-button" title="Activar / Desactivar dark mode"></button>
+        </div>
     </header>
 
     <main>
@@ -35,14 +38,14 @@
         </div>
     </main>
 
-    <section class="content-a">
+    <section class="content-a hide-content">
         <div>
             <h2>content A section</h2>
             <p>Lorem ipsum dolor sit amet.</p>
         </div>
     </section>
 
-    <section class="content-b hide-content">
+    <section class="content-b">
         <div>
             <h2>content B section</h2>
             <div class="mensaje-encriptado-content">Lorem ip</div>
@@ -56,6 +59,7 @@
     <hr>
 
     <footer><small><mark>Copy | Mauricio Cox</mark></small></footer>
+    <script src="./script.js"></script>
 </body>
 
 </html>

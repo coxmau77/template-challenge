@@ -1,0 +1,103 @@
+/*< Estilos base que SÍ son necesarios en el tema dark */
+:root {
+  --main-color: #1083d6;
+  --title-color: #2a3b47;
+  --text-color: #697477;
+  --light-text-color: #a0a7ac;
+  --border-color: #eff3f5;
+  --container-color: #ffffff;
+  --body-color: #fbfbfe;
+  --container-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+}
+
+body.dark-theme {
+  --main-color: #52a5e0;
+  --title-color: #eff3f5;
+  --text-color: #c8cdd0;
+  --light-text-color: #a0a7ac;
+  --border-color: #2a3b47;
+  --container-color: #212e36;
+  --body-color: #192229;
+  --container-shadow: none;
+}
+
+body {
+  background: var(--body-color);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--title-color);
+}
+
+a {
+  color: var(--main-color);
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.subtitle {
+  color: var(--light-text-color);
+}
+
+.button {
+  background: var(--main-color);
+}
+
+.container {
+  background: var(--container-color);
+  box-shadow: var(--container-shadow);
+}
+/*Fin de estilos base que SÍ son necesarios en el tema dark />*/
+
+/*< Botón para activar el tema oscuro*/
+.change-theme-button {
+  font-size: 20px;
+  font-weight: 600;
+  outline: none;
+  color: var(--title-color);
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  &::before {
+    content: "☀️ Tema claro";
+
+    .dark-theme & {
+      content: "🌙 Tema oscuro";
+    }
+  }
+}
+/*Fin del Botón para activar el tema oscuro />*/
+
+/*< Estilos bases que no son necesarios en el tema dark, sólo para que el ejemplo se vea bonito */
+body {
+  padding: 3rem;
+  font-family: "Open Sans";
+}
+
+.subtitle {
+  margin-top: -1rem;
+  margin-bottom: 1.5rem;
+}
+
+.button {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+}
+
+.container {
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+}
