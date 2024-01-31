@@ -195,7 +195,7 @@ button {
   padding: var(--pg);
   margin: 1rem 0.5rem;
   border-radius: 8px;
-  min-height: 320px;
+  /* min-height: 320px; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -232,7 +232,7 @@ button {
 
 section {
   grid-area: section;
-  max-height: 700px;
+  /* max-height: 700px; */
 }
 
 footer {
