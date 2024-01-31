@@ -1,4 +1,4 @@
-/*< Estilos base que SÍ son necesarios en el tema dark */
+/* // Estilos base que SÍ son necesarios en el tema dark */
 :root {
   --main-color: #1083d6;
   --title-color: #2a3b47;
@@ -56,9 +56,9 @@ hr {
   background: var(--container-color);
   box-shadow: var(--container-shadow);
 }
-/*Fin de estilos base que SÍ son necesarios en el tema dark />*/
+/* // Fin de estilos base que SÍ son necesarios en el tema dark */
 
-/*< Botón para activar el tema oscuro*/
+/* // Botón para activar el tema oscuro */
 .change-theme-button {
   font-size: 20px;
   font-weight: 600;
@@ -68,17 +68,17 @@ hr {
   border: none;
   cursor: pointer;
 
-  &::before {
-    content: "☀️ Tema claro";
-
-    .dark-theme & {
-      content: "🌙 Tema oscuro";
-    }
+  .change-theme-button::before {
+    content: "🌞 Tema claro";
+  }
+  .dark-theme .change-theme-button::before {
+    content: "🌝 Tema oscuro";
   }
 }
-/*Fin del Botón para activar el tema oscuro />*/
 
-/*< Estilos bases que no son necesarios en el tema dark, sólo para que el ejemplo se vea bonito */
+/* //  Fin del Botón para activar el tema oscuro */
+
+/* // Estilos bases que no son necesarios en el tema dark, sólo para que el ejemplo se vea bonito */
 body {
   padding: 3rem;
   font-family: "Open Sans";
@@ -101,3 +101,7 @@ body {
   border-radius: 0.5rem;
   margin-bottom: 2rem;
 }
+
+/* -------------------------------------------------- */
+
+
